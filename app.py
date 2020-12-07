@@ -12,10 +12,15 @@ freezer = Freezer(app)
 def home():
     posts = [page for page in pages if 'date' in page.meta]
     # Sort pages by date
-    del posts[0]
     sorted_posts = sorted(posts, reverse=True,
                           key=lambda page: page.meta['date'])
     return render_template('index.html', pages=sorted_posts)
+
+
+@app.route('/about')
+def about():
+    facker_about = pages.get('about')
+    return render_template('page.html', page=facker_about)
 
 
 @app.route('/article/<path:path>/')
