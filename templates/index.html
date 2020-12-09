@@ -4,6 +4,9 @@
 <h2>Posts</h2>
 
 <ul>
+    <li><a href="{{ url_for('page', path=top_page.path) }}">
+        {{ top_page.meta.title }}
+    </a>- {{ top_page.meta.date }}</li>
     {% for page in pages %}
         <li><a href="{{ url_for('page', path=page.path) }}">
             {{ page.meta.title }}

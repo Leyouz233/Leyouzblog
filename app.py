@@ -10,11 +10,20 @@ freezer = Freezer(app)
 
 @app.route('/')
 def home():
-    posts = [page for page in pages if 'date' in page.meta]
+    posts = [page for page in pages if 'date' in page.meta and 'top' not in page.meta]
     # Sort pages by date
     sorted_posts = sorted(posts, reverse=True,
                           key=lambda page: page.meta['date'])
-    return render_template('index.html', pages=sorted_posts)
+
+    top_articles = [page for page in pages if 'date' in page.meta]
+
+    def top_article(articles):
+        for article in articles:
+            if 'top' in article.meta:
+                return article
+
+    # sorted_posts.insert(0, top_article(top_articles))
+    return render_template('index.html', top_page=top_article(top_articles), pages=sorted_posts)
 
 
 @app.route('/about')
