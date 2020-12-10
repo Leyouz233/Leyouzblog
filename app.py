@@ -21,6 +21,7 @@ def home():
                 return article
 
     # sorted_posts.insert(0, top_article(top_articles))
+    print(top_article(top_articles).meta)
     return render_template('index.html', top_page=top_article(top_articles), pages=sorted_posts)
 
 
