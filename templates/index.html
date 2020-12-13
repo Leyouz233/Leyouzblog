@@ -15,35 +15,68 @@
        <div class="row">
            <div class="col-md-8 blog-main">
                <h3 class="pb-4 mb-4 font-italic border-bottom">
-                   From the Firehose
+                   Article For Facker
                </h3>
-       {% for page in pages %}
-                <div class="blog-post">
-                    <h2 class="blog-post-title">
-                        <a class="text-dark" href="{{ url_for('page', path=page.path) }}">{{ page.meta.title }}
-                        </a></h2>
-                    <p class="blog-post-meta">{{ page.meta.date }}</p>
-                    <p>{{ page.meta.introduce }} . . . </p>
-                    <p class="lead mb-0"><a href="{{ url_for('page', path=page.path) }}" class="text-primary font-weight-normal">Continue reading...</a></p>
-                </div>
-       {% endfor %}
+               {% for page in pages %}
+                    <div class="blog-post">
+                        <h2 class="blog-post-title">
+                            <a class="text-dark" href="{{ url_for('page', path=page.path) }}">{{ page.meta.title }}
+                            </a></h2>
+                        <p class="blog-post-meta">{{ page.meta.date }}</p>
+                        <p>{{ page.meta.introduce }} . . . </p>
+                        <p class="lead mb-0"><a href="{{ url_for('page', path=page.path) }}" class="text-primary font-weight-normal">Continue reading...</a></p>
+                    </div>
+                {% endfor %}
                 <nav class="blog-pagination">
-                    <a class="btn btn-outline-primary" href="#">Older</a>
-                    <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+                    <a
+                            {% if type <= 10 %}
+                               class="btn btn-outline-secondary disabled" href="#"
+                            {% elif type > 10 %} class="btn btn-outline-primary" href="{{ url_for('home', type=type - 10) }}"
+                            {% endif %}
+                    >
+                        Last
+                    </a>
+                    <a
+                            {% if type == 10 %}
+                                class="btn btn-outline-secondary disabled" href="#"
+                            {% else %} class="btn btn-outline-primary" href="{{ url_for('home', type=type + 10) }}"
+                            {% endif %}
+                    >
+                        Next
+                    </a>
+{#                    <a class="btn btn-outline-primary" href="#">Last</a>#}
+{#                    <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Next</a>#}
                 </nav>
-
             </div>
+
+           <aside class="col-md-4 blog-sidebar">
+              <div class="p-4 mb-3 bg-light rounded">
+                <h4 class="font-italic">About</h4>
+                  <p class="mb-0"><code>Life is simple, I use Python.</code>
+                      对于自己的人生也是如此。我叫Facker，把人生看作是充满希望的人。</p>
+              </div>
+
+              <div class="p-4">
+                <h4 class="font-italic">Archives</h4>
+                <ol class="list-unstyled mb-0">
+                    <li><a href="#">December 2020</a></li>
+{#                  <li><a href="#">March 2014</a></li>#}
+{#                  <li><a href="#">February 2014</a></li>#}
+{#                  <li><a href="#">January 2014</a></li>#}
+{#                  <li><a href="#">December 2013</a></li>#}
+{#                  <li><a href="#">November 2013</a></li>#}
+{#                  <li><a href="#">October 2013</a></li>#}
+{#                  <li><a href="#">September 2013</a></li>#}
+{#                  <li><a href="#">August 2013</a></li>#}
+{#                  <li><a href="#">July 2013</a></li>#}
+{#                  <li><a href="#">June 2013</a></li>#}
+{#                  <li><a href="#">May 2013</a></li>#}
+{#                  <li><a href="#">April 2013</a></li>#}
+                </ol>
+              </div>
+           </aside>
        </div>
     </main>
 
-
-{#    <li><a href="{{ url_for('page', path=top_page.path) }}">#}
-{#        {{ top_page.meta.title }}#}
-{#    </a>- {{ top_page.meta.date }}</li>#}
-{##}
-{#        <li><a href="{{ url_for('page', path=page.path) }}">#}
-{#            {{ page.meta.title }}#}
-{#        </a>- {{ page.meta.date }}</li>#}
-{#    {% endfor %}#}
 </ul>
 {% endblock %}
