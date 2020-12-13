@@ -22,7 +22,9 @@ def home(types=10):
         for article in articles:
             if 'top' in article.meta:
                 return article
-
+    
+    if types < 10:
+        types = 10
     page_article = types - 10
     post = sorted_posts[page_article:types]
 
