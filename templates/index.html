@@ -29,18 +29,15 @@
                 {% endfor %}
                 <nav class="blog-pagination">
                     <a
-                            {% if type <= 10 %}
+                            {% if type == 10 %}
                                class="btn btn-outline-secondary disabled" href="#"
-                            {% elif type > 10 %} class="btn btn-outline-primary" href="{{ url_for('home', type=type - 10) }}"
+                            {% elif type > 10 %} class="btn btn-outline-primary" href="{{ url_for('home', types=type - 10, _external=True) }}"
                             {% endif %}
                     >
                         Last
                     </a>
                     <a
-                            {% if type == 10 %}
-                                class="btn btn-outline-secondary disabled" href="#"
-                            {% else %} class="btn btn-outline-primary" href="{{ url_for('home', type=type + 10) }}"
-                            {% endif %}
+                        class="btn btn-outline-primary" href="{{ url_for('home', types=type + 10, _external=True) }}"
                     >
                         Next
                     </a>

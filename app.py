@@ -6,8 +6,8 @@ app.config.from_pyfile('settings.py')
 pages = FlatPages(app)
 
 
-@app.route('/index/type=<int:types>', methods=['GET', 'POST'])
-@app.route('/type=<int:types>', methods=['GET', 'POST'])
+@app.route('/index/<int:types>', methods=['GET', 'POST'])
+@app.route('/<int:types>', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
 @app.route('/', methods=['GET', 'POST'])
 def home(types=10):
