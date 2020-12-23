@@ -42,6 +42,11 @@ def page(path):
     page = pages.get_or_404(path)
     return render_template('page.html', page=page)
 
+@app.route('/<path:shi>/')
+def shi(shi):
+    page = pages.get_or_404(shi)
+    return render_template('shi.html', page=page)
+
 
 if __name__ == '__main__':
     app.run()
