@@ -1,7 +1,6 @@
 title: Hello World
 date: 2020-12-6 17:52:12
 introduce: 貌似每一个程序员的人生都是从这里开始的，一句简简单单的print('Hello World')，一段的简单的代码，却是一段不简单的人生
-top: 1
 
 
 ### 写在最前
