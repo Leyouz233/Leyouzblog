@@ -1,6 +1,11 @@
+# virtual venv
 venv
-.idea
 venv*
+env
+env*
+
+.idea
 __pycache__
+
 try_*.md
 frpc.ini
