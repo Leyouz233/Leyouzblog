@@ -6,3 +6,6 @@ env*
 
 .idea
 __pycache__
+
+try_*.md
+frpc.ini
