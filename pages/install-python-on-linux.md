@@ -1,6 +1,7 @@
 title: Linux安装Python遇到的坑
 date: 2021-3-01 17:31:52
 introduce: 在Linux安装Python的时候，因为安装路径写错，导致了在使用Python出现了错误
+top: 1
 tag: Python, Linux
 
 ### 前因后果
