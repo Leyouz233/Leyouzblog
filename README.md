@@ -23,7 +23,7 @@
 + python -m venv venv # 创建虚拟环境
 + source venv/bin/activate # 进入虚拟环境
 + python -m pip install -r requirements.txt # 下载所需的第三方库
-+ python app.py # 运行app.py，打开http://127.0.0.1:5000 
++ python app.py # 运行app.py，打开http://0.0.0.0:5000 
 
 关于后期计划
 ===
