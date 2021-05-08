@@ -11,7 +11,7 @@ tag: Python, Linux
 
 这个系统里面默认自带的Python是3.7版的和2.7版的，所以嘛，作为Linux小白的我，反手一顿操作
 
-```Linux
+```
 rm python*
 ```
 
@@ -31,21 +31,21 @@ rm python*
 #### 下载Python3.9
 使用`wget`来把Python3.9下载到本地。
 
-```Linux
+```
 wget https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tgz
 ```
 
 #### 解压Python3.9
 因为下载好的是归档文件tarball，所以解压Python使用的工具是`tar`。
 
-```Linux
+```
 tar -zxvf Python-3.9.2.tgz
 ```
 
 #### 编译并安装
 使用`cd`进入到解压好的Python文件里面，可以用`ls`命令查看其中的文件，
 
-```Linux
+```
 cd Python-3.9.2
 ls
 ```
@@ -55,7 +55,7 @@ Linux对源代码的安装分为两步：编译，安装
 通过`ls`查看Python源代码目录下有没有`configure`文件
 然后执行编译
 
-```Linux
+```
 ./configure --prefix=/usr/local/python39
 ```
 
@@ -65,7 +65,7 @@ Linux对源代码的安装分为两步：编译，安装
 没报错的话就说明好了（废话）
 然后执行安装命令
 
-```Linux
+```
 make
 make install
 ```
@@ -75,7 +75,7 @@ make install
 #### 解决pip报错问题
 因为上面那一段提到说路径写错，然后重新修改路径后，其实际上pip是不能用的，当在命令行输入`pip3`会报错找不到pip，一般是路径错误，这个时候对应上文我们把Python3.9移到了local上面，这时可以通过vim来修改pip的路径
 
-```Linux
+```
 sudo vim /usr/local/python39/bin/pip3.9
 ```
 
