@@ -47,12 +47,14 @@ tar -zxvf Python-3.9.2.tgz
 
 ```
 cd Python-3.9.2
+
 ls
 ```
 Linux对源代码的安装分为两步：编译，安装
 
 ##### 编译源代码
 通过`ls`查看Python源代码目录下有没有`configure`文件
+
 然后执行编译
 
 ```
@@ -67,6 +69,7 @@ Linux对源代码的安装分为两步：编译，安装
 
 ```
 make
+
 make install
 ```
 
