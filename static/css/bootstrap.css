@@ -182,9 +182,20 @@ samp {
 }
 
 pre {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  overflow: auto;
+  border-left-color: black;
+  border-left-style: solid;
+  border-left-width: 6px;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 24px;
+  margin-left: 0px;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  padding: 24px;
+  width: 100%;
   -ms-overflow-style: scrollbar;
 }
 
