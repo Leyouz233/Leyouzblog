@@ -1,17 +1,17 @@
 {% extends 'base.html' %}
-    {% block content %}
+{% block content %}
     <div class="container">
 
-    {% if page.meta.title != "About"%}
+{% if page.meta.title != "About"%}
         <h1>{{ page.meta.title }}</h1>
         <p>{{ page.meta.date }} | {{ page.meta.tag}}</p>
         <hr>
-        {{ page }}
-    {% else %}
+{{ page }}
+{% else %}
         <h1>{{ page.meta.title }}</h1>
         <hr>
-	{{ page }}
-    {% endif %}
+{{ page }}
+{% endif %}
 
 {% endblock %}
 
