@@ -591,13 +591,13 @@ pre code {
 
 @media (width > 161px) {
   #content_progress {
-      top: 3.5rem;
+      top: 3.42rem;
   }
 }
 
 @media (width <= 161px) {
   #content_progress {
-      top: 6rem;
+      top: 5.95rem;
   }
 }
 
