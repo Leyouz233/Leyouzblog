@@ -5460,11 +5460,11 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 #content_progress::-webkit-progress-value {
-    background-color: blue;
+    background-color: #1dcbe8;
 }
 
 #content_progress::-moz-progress-bar {
-    background-color: blue;
+    background-color: #1dcbe8;
 }
 
 .progress {
