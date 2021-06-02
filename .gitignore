@@ -1,10 +1,9 @@
-# virtual venv
 venv
-venv*
 env
-env*
 
 .idea
+.vscode
+
 __pycache__
 
 try_*.md
