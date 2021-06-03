@@ -5,8 +5,8 @@ tag: VSCode, Note
 
 在VSCode界面中，输入`Shift + Ctrl + P`，弹出搜索界面。
 
-!["Select"](/static/img/venv-path/select.png "select")
+![Select](/static/img/venv-path/select.png)
 
 输入`Python: Select Interpreter`。
 
-!["Python: Select Interpreter:"](/static/img/venv-path/select-interpreter.png "Python: Select Interpreter")
+![Python: Select Interpreter](/static/img/venv-path/select-interpreter.png)
