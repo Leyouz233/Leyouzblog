@@ -1,5 +1,6 @@
-title: About
+title: About Me
 introduce: Life is simple, I use Python
+tap: About
 
 ## 关于自己
 人生总是这样，对于自己的人生也是如此。
