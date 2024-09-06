@@ -1,5 +1,5 @@
-title: 
-date: 2024-**-** 23:00:00
+title: 模板 
+date: 2000-05-20 00:00:00
 introduce: 
 tag: 日记
 
