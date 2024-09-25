@@ -6,7 +6,9 @@ from flask_frozen import Freezer
 # runs YOUR Flask app - omit .py from the filename
 from app import app
 
-app.config['FREEZER_RELATIVE_URLS'] = True
+
+app.config['subdomain_matching'] = False    
+#app.config['FREEZER_RELATIVE_URLS'] = True
 
 freezer = Freezer(app)
 
