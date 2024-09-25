@@ -6,9 +6,6 @@ app.config.from_pyfile('settings.py')
 pages = FlatPages(app)
 
 
-@app.route('/index/<int:types>', methods=['GET', 'POST'])
-@app.route('/<int:types>', methods=['GET', 'POST'])
-@app.route('/index', methods=['GET', 'POST'])
 @app.route('/', methods=['GET', 'POST'])
 def home(types=10):
     posts = [page for page in pages if 'date' in page.meta and 'top' not in page.meta]
@@ -31,7 +28,7 @@ def home(types=10):
     return render_template('index.html', top_page=top_article(top_articles), pages=post, type=types)
 
 
-@app.route('/about')
+@app.route('/about.html')
 def about():
     facker_about = pages.get('about')
     return render_template('page.html', page=facker_about)
