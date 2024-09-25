@@ -10,7 +10,8 @@ app.config['FREEZER_RELATIVE_URLS'] = True
 
 freezer = Freezer(app)
 
-app.config['FREEZER_DESTINATION'] = "./build"
+
+app.config['FREEZER_DESTINATION'] = "leyouz233"
 
 if __name__ == '__main__':
     freezer.freeze()
