@@ -13,7 +13,7 @@ app.config['subdomain_matching'] = False
 freezer = Freezer(app)
 
 
-app.config['FREEZER_DESTINATION'] = "leyouz233"
+app.config['FREEZER_DESTINATION'] = "../leyouz233"
 
 if __name__ == '__main__':
     freezer.freeze()
