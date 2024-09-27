@@ -6,8 +6,8 @@
 
 如何在本地运行
 ===
-+ git clone https://github.com/f-boss/facker-blog.git # 将项目克隆到本地
-+ cd facker-blog # 进入项目的根目录
++ git clone https://github.com/Leyouz233/Leyouzblog.git # 将项目克隆到本地
++ cd Leyouzblog # 进入项目的根目录
 + python -m venv venv # 创建虚拟环境
 + source venv/bin/activate # 进入虚拟环境
 + python -m pip install -r requirements.txt # 下载所需的第三方库
