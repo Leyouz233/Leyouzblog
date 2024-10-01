@@ -5,24 +5,26 @@
 
     <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
       <div class="col-md-6 px-0">
-        <h1 class="display-4 font-italic" style="font-style: oblique"><a class="text-white" href="{{ url_for('page', path=new_page.path) }}">{{ new_page.meta.title }}</a></h1>
-        <p class="mx-n1 text-muted">{{ new_page.meta.date }} | {{ new_page.meta.tag}}</p>
-        <p class="lead my-3">{{ new_page.meta.introduce }}</p>
-        <p class="lead mb-0"><a href="{{ url_for('page', path=new_page.path) }}" class="text-white font-weight-bold">Continue reading...</a></p>
+        <h1 class="display-4 font-italic" style="font-style: oblique"><a class="text-white" href="{{ url_for('page', path=top_page.path) }}">{{ top_page.meta.title }}</a></h1>
+        <p class="mx-n1 text-muted">{{ top_page.meta.date }} | {{ top_page.meta.tag}}</p>
+        <p class="lead my-3">{{ top_page.meta.introduce }}</p>
+        <p class="lead mb-0"><a href="{{ url_for('page', path=top_page.path) }}" class="text-white font-weight-bold">Continue reading...</a></p>
       </div>
     </div>
     <main role="main" class="container">
        <div class="row">
            <div class="col-md-8 blog-main">
                <h3 class="pb-4 mb-4 font-italic border-bottom">
-                   Leyouz's All Years
+                   Leyouz's articles
                </h3>
-               {% for year in years %}
+               {% for page in pages %}
                     <div class="blog-post">
                         <h2 class="blog-post-title">
-				<a class="text-dark" href="{{ year }}.html">
-					{{ year }}
-			    </a></h2>
+                            <a class="text-dark" href="{{ url_for('page', path=page.path) }}">{{ page.meta.title }}
+                            </a></h2>
+                        <p class="blog-post-meta">{{ page.meta.date }} | {{ page.meta.tag}}</p>
+                        <p>{{ page.meta.introduce }}</p>
+                        <p class="lead mb-0"><a href="{{ url_for('page', path=page.path) }}" class="text-primary font-weight-normal">Continue reading...</a></p>
                     </div>
                 {% endfor %}
             </div>
