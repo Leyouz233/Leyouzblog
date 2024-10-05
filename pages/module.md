@@ -1,11 +1,11 @@
-title: 模板 
-date: 2023-09-20 00:00:00
+title: 模板
+date: 2024-10-01 00:00:00
 introduce: 
 tag: 日记
 
 <h4 align="center"></h4>
 
-<p align="center"></p> 
+<p align="center"></p>
 <p align="center"></p>
 <p align="center"></p>
 <p align="center"></p>
