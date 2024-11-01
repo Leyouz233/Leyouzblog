@@ -1,6 +1,6 @@
-title: 模板
-date: 2024-10-01 00:00:00
-introduce: 
+title: 11月号
+date: 2024-11-01 00:00:00
+introduce: 星期 | 
 tag: 日记
 
 <h4 align="center"></h4>
