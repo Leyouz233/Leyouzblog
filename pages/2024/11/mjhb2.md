@@ -1204,7 +1204,7 @@ tag: 中医
 </div><div align="left">
  <span style="color:#191919;font-size:16">惊则心无所倚，神无所归，虑无所定，故气乱矣。</span>
 </div><div align="left">
- <span style="font-size:16">##########</span>
+ <u><span style="color:#FA2A2D;font-size:16">##########</span></u>
 </div><div align="left">
  <span style="color:#191919;font-size:16">老弱不同，风土各异；既明至理，还贵圆通。</span>
 </div><hr><div align="left">
