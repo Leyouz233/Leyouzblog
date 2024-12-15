@@ -39,7 +39,7 @@ tag: 日记
 
 3. [第三课](/article/2024/12/zy3.html)
 
-4. [第四课](/article/2024/12/zy3.html)
+4. [第四课](/article/2024/12/zy4.html)
 
 5. [第五课](/article/2024/12/zy5.html)
 
