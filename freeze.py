@@ -31,3 +31,4 @@ app.config['FREEZER_DESTINATION'] = "../leyouz233"
 
 if __name__ == '__main__':
     freezer.freeze()
+    print("冻结结束")
