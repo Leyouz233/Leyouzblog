@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import sys  # 导入sys模块以便获取命令行参数
 import os   # 导入os模块处理文件
+import git
+from git.repo import Repo
 
 def todo_page():
     print ('开始生成文章')
@@ -93,6 +95,31 @@ def todo_page():
     
 def todo_freeze():
     print ('开始冻结文件')
+    os.system('python freeze.py')
+    print ('检查仓库状态')
+    repo = git.Repo('../leyouz233')
+    diffs = repo.index.diff(None)
+    for d in diffs:
+        print(d.a_path)
+    unts = repo.untracked_files
+    for u in unts:
+        print(u)
+    lgit = repo.git # 通过repo对象获取git对象
+    acyn = input("是否需要提交消息(y/n)：")
+    if acyn == "y":
+        addsub = input("输入需要暂存的文件(如果为.表示全部)：")
+        lgit.add(addsub)
+        com = input("输入提交消息：")
+        lgit.commit('-m', com)
+    else:
+        pass
+    puyn = input("是否需要推送到远程仓库(y/n)：")
+    if puyn == "y":
+        lgit.push()
+        print("提交完成")
+    else:
+        exit(1)
+    
 
 def main(args):
     """ 主函数，接收参数并处理 """
