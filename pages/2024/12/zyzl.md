@@ -46,3 +46,19 @@ tag: 日记
 6. [第六课](/article/2024/12/zy6.html)
 
 7. [第七课](/article/2024/12/zy7.html)
+
+##### 方剂学
+
+1. [第一课](/article/2025/01/fj1.html)
+
+2. [第二课](/article/2025/01/fj2.html)
+
+3. [第三课](/article/2025/01/fj3.html)
+
+4. [第四课](/article/2025/01/fj4.html)
+
+5. [第五课](/article/2025/01/fj5.html)
+
+6. [第六课](/article/2025/01/fj6.html)
+
+7. [第七课](/article/2025/01/fj7.html)
