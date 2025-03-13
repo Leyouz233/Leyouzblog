@@ -62,3 +62,33 @@ tag: 日记
 6. [第六课](/article/2025/01/fj6.html)
 
 7. [第七课](/article/2025/01/fj7.html)
+
+##### 针灸学
+
+1. [第一课](/article/2025/01/zj1.html)
+
+2. [第二课](/article/2025/01/zj2.html)
+
+3. [第三课](/article/2025/01/zj3.html)
+
+4. [第四课](/article/2025/01/zj4.html)
+
+5. [第五课](/article/2025/01/zj5.html)
+
+6. [第六课](/article/2025/01/zj6.html)
+
+7. [第七课](/article/2025/01/zj7.html)
+
+##### 传染病
+
+1. [第一课](/article/2025/03/cr1.html)
+
+##### 诊断学
+
+1. [第一课](/article/2025/03/zdx1.html)
+
+##### 内科学
+
+1. [第一课](/article/2025/01/nkx1.html)
+
+
