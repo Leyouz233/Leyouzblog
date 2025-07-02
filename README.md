@@ -31,10 +31,9 @@ python tools.py freeze
 - 确认后一键提交推送
 - 空变更自动跳过
 
-+ 使用generate_missing_articles.py快速解决还没写的文章
-python generate_missing_articles.py
+## generate_missing_articles.py脚本功能说明
 
-## 脚本功能说明
+python generate_missing_articles.py
 
 1. **自动检测缺失文章**：
    - 检查 `static/img/2025` 目录下的所有月份和日期文件夹
